@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&family=Merienda&family=Mukta+Vaani:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+.image-slider{
+    width: 90vw;
+    height: 80vh;
+    margin: 30px auto;
+}
+.singleDotStyle{
+    color: #f8f8f8;
+    margin: 0 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.activeDotStyle{
+    color: #184C40;
+    cursor: pointer;
+    font-size: 16px;
+ 
+}
+.singlePStyle{
+    display: none;
+}
+.activePStyle{
+position: absolute;
+color: #fff;
+font-size: 30px;
+width: 100%;
+bottom: 40px;
+min-width: 350px;
+left: 160px;
+background: rgba(0, 0, 0, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.6px);
+-webkit-backdrop-filter: blur(0.7px);
+border: 1px solid rgba(255, 255, 255, 0.8);
+padding: 2rem;
+font-family: 'Libre Franklin', sans-serif;
+}
+.activePStyle:hover{
+    cursor:default;
+}
+h1{
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: 5px;
+    font-size: 34px;
+}
+
+@media screen and (max-width: 960px){
+    .activePStyle{
+        font-size: 16px;
+        min-width: 200px;
+        left: -100px;
+    }
+    .image-slider{
+        margin-top: 100px;
+    }
+
+}

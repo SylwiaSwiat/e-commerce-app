@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&family=Merienda&family=Mukta+Vaani:wght@300&display=swap');
+
+.select{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 25px;
+}
+
+.filterGender, .filterType{
+width: 250px;
+font-size: 16px;
+font-family: 'Mukta Vaani', sans-serif;
+cursor: pointer;
+margin: 20px;
+padding: 12px;
+outline: none;
+border: 0;
+border-radius: 2px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.filterGender:hover, 
+.filterType:focus,
+.filterGender:focus,
+.filterType:hover{
+    outline: none;
+    border: 0;
+    border-radius: 2px;
+    width: 250px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+::selection{
+    background-color: #242222;
+    color: #BE6D8B;
+}
+@media screen and (max-width: 960px){
+    .filterGender, .filterType{
+        width: 250px;
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+

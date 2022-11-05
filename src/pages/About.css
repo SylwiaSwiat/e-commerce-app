@@ -1,0 +1,78 @@
+
+.aboutContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 16px;
+    color: #242222;
+}
+.horizontalLine{
+    margin-top: 150px ;
+    margin-bottom: 60px;
+    width: 90%;
+    height: 2px;
+    background-color: #184C40;
+}
+.aboutInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 5px 20px;
+    margin-left: 50px;
+}
+.aboutInfo h1{
+    font-family: 'Merienda', cursive;
+    font-size: 36px;
+    text-align: left;
+    text-transform: uppercase;
+    margin:8px 0;
+}
+.aboutInfo h3{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    color: #184C40;
+}
+.aboutImg{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+}
+.aboutImg img{
+    width: 460px;
+    z-index: 10;
+    box-shadow: 80px -80px 0 -40px #184C40,
+
+    rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media screen and (max-width: 960px){
+    .about{
+        width: 100%;
+    }
+    .aboutContainer{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .aboutInfo{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .aboutInfo h1{
+        font-size: 28px;
+    }
+    .aboutInfo h3{
+        font-size: 18px;
+    }
+    .aboutImg{
+        margin-top: 30px;
+    }
+    .aboutImg img{
+        box-shadow: 40px -40px 0 -20px #184C40,
+        rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: auto;
+        width: 280px;
+    }
+}

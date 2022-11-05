@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&family=Merienda&family=Mukta+Vaani:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --deepTeal: #173F35;
+  --dustyRose: #b77b82;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+   overflow-x: hidden; 
+  
+}
+.loading {
+  width: 44.8px;
+  height: 44.8px;
+  background: linear-gradient(currentColor 0 0),
+         linear-gradient(currentColor 0 0),
+         linear-gradient(currentColor 0 0),
+         linear-gradient(currentColor 0 0);
+  background-size: 23.4px 23.4px;
+  background-repeat: no-repeat;
+  animation: squares-1 1.5s infinite cubic-bezier(0.3,1,0,1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes squares-1 {
+  0% {
+     background-position: 0 0,100% 0, 100% 100%, 0 100%;
+     color:#86A8E7
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  33% {
+     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+     width: 67.2px;
+     height: 67.2px;
+     color: #86A8E7;
   }
-  to {
-    transform: rotate(360deg);
+
+  66% {
+     background-position: 100% 0, 100% 100%, 0 100%, 0 0;
+     width: 67.2px;
+     height: 67.2px;
+     color: #D16BA5;
+  }
+
+  100% {
+     background-position: 100% 0, 100% 100%, 0 100%, 0 0;
+     color: #D16BA5;
   }
 }
