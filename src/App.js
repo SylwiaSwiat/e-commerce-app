@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {HashRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Nav from './components/Nav';
@@ -80,7 +80,7 @@ handleTop();
      </div> :  */}
      
      <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <ScrollToTop/>
       <Nav cartItems={cartItems} searchItem={searchItem} setSearchItem={setSearchItem} isPop={isPop}/>
       <Routes>
