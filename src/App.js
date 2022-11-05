@@ -1,4 +1,4 @@
-import {HashRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Nav from './components/Nav';
@@ -84,13 +84,13 @@ handleTop();
         <ScrollToTop/>
       <Nav cartItems={cartItems} searchItem={searchItem} setSearchItem={setSearchItem} isPop={isPop}/>
       <Routes>
-        <Route path='/e-commerce-app'exact element={<Home/>}></Route>
-        <Route path='/e-commerce-app/shopping-cart' exact element={<ShoppingCart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleClear={handleClear} totalPrice={totalPrice}/>}></Route>
-        <Route path='/e-commerce-app/products' exact element={<Products handleAddProduct={handleAddProduct} products={products} searchItem={searchItem} setSearchItem={setSearchItem}  />}></Route>
-        <Route path='/e-commerce-app/register' exact element={<Register/>}></Route>
-        <Route path='/e-commerce-app/sign-in'exact element={<SignIn/>}></Route>
-        <Route path='/e-commerce-app/collect-step1' exact element={<BuyForm handleCartClearance={handleCartClearance} cartItems={cartItems} setCartSuccess={setCartSuccess} cartSuccess={cartSuccess} totalPrice={totalPrice}/> }></Route>
-        <Route path='/e-commerce-app/collect-step2' exact element={<OrderSummary setCartItems={setCartItems} cartItems={cartItems} handleCartClearance={handleCartClearance}/>} setCartSuccess={setCartSuccess} cartSuccess={cartSuccess} totalPrice={totalPrice}></Route>
+        <Route path='/'exact element={<Home/>}></Route>
+        <Route path='/shopping-cart' exact element={<ShoppingCart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleClear={handleClear} totalPrice={totalPrice}/>}></Route>
+        <Route path='/products' exact element={<Products handleAddProduct={handleAddProduct} products={products} searchItem={searchItem} setSearchItem={setSearchItem}  />}></Route>
+        <Route path='/register' exact element={<Register/>}></Route>
+        <Route path='/sign-in'exact element={<SignIn/>}></Route>
+        <Route path='/collect-step1' exact element={<BuyForm handleCartClearance={handleCartClearance} cartItems={cartItems} setCartSuccess={setCartSuccess} cartSuccess={cartSuccess} totalPrice={totalPrice}/> }></Route>
+        <Route path='/collect-step2' exact element={<OrderSummary setCartItems={setCartItems} cartItems={cartItems} handleCartClearance={handleCartClearance}/>} setCartSuccess={setCartSuccess} cartSuccess={cartSuccess} totalPrice={totalPrice}></Route>
       </Routes>
       <Footer/>
       </Router>
