@@ -3,7 +3,7 @@ const products = [
         title: 'green sweather',
         id: 1,
         price: '50',
-        image: './e-commerce-app/images/green-sweather.jpg',
+        image: './images/green-sweather.jpg',
         quantity: 0,
         type: 'sweather',
         status: 'female',

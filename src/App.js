@@ -80,7 +80,7 @@ handleTop();
      </div> :  */}
      
      <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <ScrollToTop/>
       <Nav cartItems={cartItems} searchItem={searchItem} setSearchItem={setSearchItem} isPop={isPop}/>
       <Routes>
