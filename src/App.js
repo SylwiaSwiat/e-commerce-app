@@ -20,15 +20,15 @@ function App() {
   const [searchItem, setSearchItem] = useState('')
 const [cartSuccess, setCartSuccess] = useState(false)
 const [isPop, setIsPop] = useState(false);
-const [loading, setLoading] = useState(false);
+// const [loading, setLoading] = useState(false);
 const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0);
 
-useEffect(()=>{
-  setLoading(true);
-   setTimeout(()=>{
-     setLoading(false)
-   }, 3000)
-},[])
+// useEffect(()=>{
+//   setLoading(true);
+//    setTimeout(()=>{
+//      setLoading(false)
+//    }, 3000)
+// },[])
     useEffect(()=>{
       localStorage.setItem('cartItems', JSON.stringify(cartItems))
     }, [cartItems])
