@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&family=Merienda&family=Mukta+Vaani:wght@300&display=swap');
 
-.item{
+.item {
     display: flex;
-    width: 450px;
+    width: 28rem;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,70 +10,81 @@
     align-content: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #fff;
-    margin: 20px;
-    padding: 20px;
+    margin: 1.25rem;
+    padding: 1.25rem;
 }
-.item img{
-    width: 300px;
-    height: 300px;
-    margin: 5px;
+
+.item img {
+    width: 9rem;
+    height: 9rem;
+    margin: .5rem;
 }
-.itemPhotoAndInfo{
+
+.itemPhotoAndInfo {
     display: flex;
     flex-direction: row;
 }
-.itemInfo{
+.itemInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Mukta Vaani', sans-serif;
     text-transform: capitalize;
-    font-size: 22px;
+    font-size: 1.5rem;
 }
-.itemInfo h5{
-font-size: 24px;
-margin: 5px;
+
+.itemInfo h5 {
+font-size: 1.5rem;
+margin: 0;
 color: #242222;
 }
-.itemInfo p{
-    margin: 2px;
+
+.itemInfo p {
+    margin: 0;
     color: #242222;
 }
-.buy{
+
+.buy {
     width: 90%;
     padding: 1rem;
     cursor: pointer;
-font-family: 'Libre Franklin', sans-serif;
-font-size: 18px;
-color: #fff;
-background: #184C40;
-outline: none;
-border: none;
-border-radius: 2px;
-transition:  1s ease-out;
-box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.5px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+    background: #184C40;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    transition:  1s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.5px;
 }
-.buy:hover{
+
+.buy:hover {
     background:  #11362e;;
 }
-.buy:active{
-   background: #fff;
+
+.buy:active {
+    background: #fff;
     box-shadow: none;
 }
+
 @media screen and (max-width: 960px){
-    img{
-        width: 150px;
-        height: 150px;
+    img {
+        width: 10rem;
+        height: 10rem;
     }
-    .item{
-        width: 280px;
+    
+    .item {
+        width: 17.5rem;
     }
-    .itemInfo h5{
-        font-size: 18px;
-        margin: 5px 0;
+
+    .itemInfo h5 {
+        font-size: 1rem;
+        margin: .25rem 0;
     }
-    .buy{
-        font-size: 14px;
+
+    .buy {
+        font-size: .875rem;
         padding: .8rem .2rem;
     }
 }

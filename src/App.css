@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&family=Merienda&family=Mukta+Vaani:wght@300&display=swap');
-*{
+
+* {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-:root{
+:root {
   --deepTeal: #173F35;
   --dustyRose: #b77b82;
 }
-body{
+
+body {
   width: 100vw;
   height: 100vh;
    overflow-x: hidden; 
   
 }
+
 .loading {
   width: 44.8px;
   height: 44.8px;

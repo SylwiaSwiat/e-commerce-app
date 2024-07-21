@@ -1,78 +1,93 @@
-.footer{
-     background: #242222; 
-    height: 400px;
+.footer {
+    background: #242222; 
+    height: 25rem;
     width: 100vw;
-    margin-top: 300px;
+    margin-top: 20rem;
     display: flex;
-    padding: 20px;
+    padding: 1.25rem;
     color: #D3D3D3;
     justify-content: space-around;
     text-decoration: none;
     font-family: 'Mukta Vaani', sans-serif;
 }
+
 .footer-left,
 .footer-center,
-.footer-right{
+.footer-right {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
-.footer-left{
+
+.footer-left {
     width: 40%;
 }
-.social{
-    font-size: 40px;
+
+.social {
+    font-size: 2.5rem;
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
+
 .social i {
-    margin-right: 30px;
+    margin-right: 2rem;
 }
+
 .footer-link,
-.footer-right a{
+.footer-right a {
     text-decoration: none;
     color: #D3D3D3;
 }
-.footer h5{
+
+.footer h5 {
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
-.footer p{
-    margin: 8px 0;
-    font-size: 18px;
+
+.footer p {
+    margin: .5rem 0;
+    font-size: 1rem;
 }
-.footer-right i{
-    margin-right: 15px;
+
+.footer-right i {
+    margin-right: 1rem;
 }
+
 @media screen and (max-width: 960px){
-    .footer{
+    .footer {
         height: fit-content;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 3rem;
     }
-    .footer h5{
-        margin: 20px 5px 10px 5px;
-        font-size: 18px;
+
+    .footer h5 {
+        margin: 1.25rem .25rem .5rem .25rem;
+        font-size: 1rem;
     }
-    .footer p{
-        font-size: 14px;
+
+    .footer p {
+        font-size: .875rem;
     }
-    .footer-logo img{
-width:200px;
-height: auto;
+
+    .footer-logo img {
+        width: 12rem;
+        height: auto;
     }
-    .footer-left{
+
+    .footer-left {
         width: 100%;
     }
-    .social{
-        font-size: 30px;
-        margin-top: 30px;
+
+    .social {
+        font-size: 2rem;
+        margin-top: 2rem;
     }
+
     .footer-center,
     .footer-left,
-    .footer-right{
+    .footer-right {
         align-items: center;
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
 }

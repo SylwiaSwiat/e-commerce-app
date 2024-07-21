@@ -1,95 +1,108 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #f8f8f8;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 9rem;
 }
-form{
-    margin:60px 25px 10px 25px;
-    width: 800px;
+
+form {
+    margin: 4rem 1.5rem .5rem 1.5rem;
+    width: 50rem;
     background: #ee9ca7;  
-background: -webkit-linear-gradient(to top, #4669a6, #eea7ad);  
-background: linear-gradient(to top, #4669a6, #eea7ad); 
-padding: 20px;
+    background: -webkit-linear-gradient(to top, #4669a6, #eea7ad);  
+    background: linear-gradient(to top, #4669a6, #eea7ad); 
+    padding: 1.25rem;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 2.95px 2.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.formBox{
+
+.formBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     color: #f8f8f8;
 }
-form>h1{
+
+form>h1 {
     color: #f8f8f8;
-    margin: 30px;
+    margin: 2rem;
     text-transform: uppercase;
 }
-.formInput{
-    margin: 20px 12px;
-    width: 400px;
-    padding: 10px;
+
+.formInput {
+    margin: 1.25rem .75rem;
+    width: 25rem;
+    padding: .5rem;
     border: none;
     outline: none;
     background: transparent;
     color: #f8f8f8;
-    font-size: 16px;
+    font-size: 1rem;
     font-family:'Mukta Vaani', sans-serif;
     transition: all .3s ease-in-out;
     border-bottom: 1px solid #f8f8f8;
 }
-::placeholder{
+
+::placeholder {
     color: #f8f8f8;
 }
-.err{
-    font-size: 12px;
+
+.err {
+    font-size: .75rem;
     color: #f8f8f8e1;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: .5rem;
 }
-.registerBtn{
+
+.registerBtn {
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 1.25rem;
     color: #4669a6;
-   background: #f8f8f8;
-border-radius: 2px;
-transition:  1s ease-out;
-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 2.95px 2.5px;
-cursor: pointer;
-font-family: 'Libre Franklin', sans-serif;
-padding:  1rem 2rem;
-margin: 20px 10px 10px 10px;
+    background: #f8f8f8;
+    border-radius: 2px;
+    transition:  1s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 2.95px 2.5px;
+    cursor: pointer;
+    font-family: 'Libre Franklin', sans-serif;
+    padding:  1rem 2rem;
+    margin: 1.25rem .5rem .5rem;
 }
-.registerBtn:hover{
+
+.registerBtn:hover {
     background: #ee9ca7;
     color: #fff;
 }
-.link{
+
+.link {
     color: #f8f8f8;
     text-align: center;
-    font-size: 17px;
+    font-size: 1rem;
     text-decoration: none;
-    margin: 10px;
+    margin: .5rem;
 }
-.link:visited{
-text-decoration: none;
+
+.link:visited {
+    text-decoration: none;
 }
-.success{
+
+.success {
     background: #f8f8f8;
-    width: 800px;
+    width: 50rem;
     z-index: 99;
     color: #4669a6;
     position: absolute;
@@ -100,111 +113,128 @@ text-decoration: none;
     align-items: center;
     transition: all ease .4s;
 }
-#login{
+
+#login {
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 6rem;
 }
-.success .closeSuccess{
+
+.success .closeSuccess {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
     background: transparent;
     border: none;
     outline: none;
     cursor: pointer;
 }
-.success .closeSuccess:active{
-    font-size: 26px;
+
+.success .closeSuccess:active {
+    font-size: 1.5rem;
 }
-.success img{
+
+.success img {
     height: 100%;
-    padding: 20px;
+    padding: 1.25rem;
 }
-.successInfo{
-    font-size: 44px;
+
+.successInfo {
+    font-size: 3rem;
     font-family: 'Libre Franklin', sans-serif;
     line-height: 1.5;
-    margin: 50px 10px 10px 10px;
+    margin: 3rem .5rem .5rem;
 }
+
 .closeSuccess i {
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
     color: #4669a6;
 }
-.hide{
+
+.hide {
    display: none;
 }
-.dataInputs{
+
+.dataInputs {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 0 30px;
+    grid-gap: 0 2rem;
 }
-.dataInputs p{
-    font-size: 20px;
+
+.dataInputs p {
+    font-size: 1.25rem;
 }
-.personal{
-    width: 250px;
+
+.personal {
+    width: 15rem;
 }
-.dataText{
+
+.dataText {
     color: #f8f8f8;
-    margin-left: 15px;
+    margin-left: 1rem;
 }
+
 #dataText1,
-#dataText2{
+#dataText2 {
     margin-left: 0;
 }
-.deliveryAddress{
-    margin-top: 120px;
-    margin-bottom: 60px;
+
+.deliveryAddress {
+    margin-top: 7.5rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
 }
-.payAndDeliver{
+
+.payAndDeliver {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-items: center;
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
 }
-.payAndDeliver select{
-    width: 250px;
+
+.payAndDeliver select {
+    width: 15rem;
     background: #4669a6;
     color: #f8f8f8;
-    font-size: 16px;
+    font-size: 1rem;
     font-family:'Mukta Vaani', sans-serif;
-    padding: 10px;
+    padding: .5rem;
     outline: none;
     cursor: pointer;
     border: 1px solid #f8f8f8;
 }
-.methodText{
+
+.methodText {
     color: #f8f8f8;
-    font-size: 18px;
+    font-size: 1.25rem;
 }
-.buyForm{
+
+.buyForm {
     display: flex;
     margin-right: 0;
 }
-.orderForm{
+.orderForm {
     color: #f8f8f8;
-    margin:80px 30px 10px 30px;
-    width: 800px;
+    margin: 5rem 2rem .5rem 2rem;
+    width: 50rem;
     background: #ee9ca7;  
-background: -webkit-linear-gradient(to top, #4669a6, #eea7ad);  
-background: linear-gradient(to top, #4669a6, #eea7ad); 
-padding: 20px;
+    background: -webkit-linear-gradient(to top, #4669a6, #eea7ad);  
+    background: linear-gradient(to top, #4669a6, #eea7ad); 
+    padding: 1.25rem;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 2.95px 2.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-.cartSuccess{
+
+.cartSuccess {
     background: #f8f8f8;
-    width: 600px;
-    height: 400px;
+    width: 37.5rem;
+    height: 25rem;
     z-index: 99;
     color: #4669a6;
     position: absolute;
@@ -215,95 +245,115 @@ padding: 20px;
     align-items: center;
     justify-content: center;
     transition: all ease .4s;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
-.cartSuccess p{
-    font-size: 40px;
+
+.cartSuccess p {
+    font-size: 2.5rem;
     font-family: 'Libre Franklin', sans-serif;
 }
-.cartSuccess img{
-    width: 200px;
+
+.cartSuccess img {
+    width: 12.5rem;
 }
-.deliveryData{
-    margin-top: 60px;
-    margin-bottom: 20px;
+
+.deliveryData {
+    margin: 5rem 0 1.25rem;
 }
 
 @media screen and ( max-width: 960px){
-    form{
-        margin-top: 100px;
+    form {
+        margin-top: 6rem;
         width: auto;
     }
-    .formInput{
+
+    .formInput {
         width: 100%;
-        padding: 5px;
-        margin: 10px 6px;
-        font-size: 14px;
+        padding: .25rem;
+        margin: .5rem;
+        font-size: .875rem;
     }
-    h1{
-        font-size: 28px;
+
+    h1 {
+        font-size: 1.5rem;
     }
-  p,
-  .link{
-    font-size: 14px;
-  }
-  button,
-  .registerBtn{
-font-size: 14px;
-padding: .8rem 1.2rem;
-  }
-  .payAndDeliver{
-    grid-gap: 8px;
-  }
-  .payAndDeliver select{
-    width: 100%;
-    font-size: 12px;
-    padding: 2px;
-  }
-  .dataText{
-    margin-left: 10px;
-  }
-  .deliveryAddress{
-    margin-top: 40px;
-  }
-  .orderForm{
-    width: auto;
-  }
-  .dataInputs p{
-    font-size: 14px;
-  }
-  .cartSuccess{
-    width: auto;
-    height: auto;
-    padding: 0 20px;
-  }
-  .cartSuccess p{
-    font-size: 20px;
-  }
-  .cartSuccess img{
-    width: 100px;
-    height: auto;
-  }
-  .success{
-    width: auto;
-    height: auto;
-  }
-  .success img{
-    padding: 20px 0;
-  }
-  .successInfo{
-    font-size: 18px;
-    line-height: normal;
-    margin: 40px 5px 0 5px;
-  }
-  .success .closeSuccess{
-    top: 0px;
-    right: -16px;
-  }
-  .closeSuccess i{
-    font-size: 18px;
-  }
- .registerForm{
-    width: 80%;
- }
+
+    p,
+    .link {
+        font-size: .875rem;
+    }
+
+    button,
+    .registerBtn {
+        font-size: .875rem;
+        padding: .8rem 1.2rem;
+    }
+
+    .payAndDeliver {
+        grid-gap: .5rem;
+    }
+
+    .payAndDeliver select {
+        width: 100%;
+        font-size: .75rem;
+        padding: .25rem;
+    }
+
+    .dataText {
+        margin-left: .5rem;
+    }
+
+    .deliveryAddress {
+        margin-top: 2.5rem;
+    }
+
+    .orderForm {
+        width: auto;
+    }
+
+    .dataInputs p {
+        font-size: .875rem;
+    }
+
+    .cartSuccess {
+        width: auto;
+        height: auto;
+        padding: 0 1.25rem;
+    }
+
+    .cartSuccess p {
+        font-size: 1.25rem;
+    }
+
+    .cartSuccess img {
+        width: 6.5rem;
+        height: auto;
+    }
+
+    .success {
+        width: auto;
+        height: auto;
+    }
+    .success img {
+        padding: 1.25rem 0;
+    }
+
+    .successInfo {
+        font-size: 1.25rem;
+        line-height: normal;
+        margin: 2.5rem .25rem 0 .25rem;
+    }
+
+    .success .closeSuccess {
+        top: 0px;
+        right: -1rem;
+    }
+
+    .closeSuccess i {
+        font-size: 1.25rem;
+    }
+
+    .registerForm {
+        width: 80%;
+    }
 }

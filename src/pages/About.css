@@ -1,78 +1,95 @@
 
-.aboutContainer{
+.aboutContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 2.5rem;
     font-family: 'Mukta Vaani', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: #242222;
 }
-.horizontalLine{
-    margin-top: 150px ;
-    margin-bottom: 60px;
+
+.horizontalLine {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
     width: 90%;
     height: 2px;
     background-color: #184C40;
 }
-.aboutInfo{
+
+.aboutInfo {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 5px 20px;
-    margin-left: 50px;
+    padding: .5rem 1.25rem;
+    margin-left: 3rem;
 }
-.aboutInfo h1{
+
+.aboutInfo h1 {
     font-family: 'Merienda', cursive;
-    font-size: 36px;
+    font-size: 2rem;
     text-align: left;
     text-transform: uppercase;
-    margin:8px 0;
+    margin: .5rem 0;
 }
-.aboutInfo h3{
+
+.aboutInfo h3 {
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #184C40;
 }
-.aboutImg{
+
+.aboutImg {
     width: 50%;
     display: flex;
     justify-content: center;
     border-radius: 2px;
 }
-.aboutImg img{
-    width: 460px;
+
+.aboutImg img {
+    width: 28rem;
     z-index: 10;
     box-shadow: 80px -80px 0 -40px #184C40,
-
     rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 @media screen and (max-width: 960px){
-    .about{
+    .about {
         width: 100%;
     }
-    .aboutContainer{
+
+    .aboutContainer {
         flex-direction: column;
-        padding: 30px;
+        padding: 2rem;
     }
-    .aboutInfo{
+
+    .aboutInfo {
         width: 100%;
-        margin-left: 10px;
+        margin-left: .5rem;
     }
-    .aboutInfo h1{
-        font-size: 28px;
+
+    .aboutInfo h1 {
+        font-size: 1.5rem;
     }
-    .aboutInfo h3{
-        font-size: 18px;
+
+    .aboutInfo h3 {
+        font-size: 1.25rem;
     }
-    .aboutImg{
-        margin-top: 30px;
+
+    .aboutImg {
+        margin-top: 2rem;
     }
-    .aboutImg img{
+
+    .aboutImg img {
         box-shadow: 40px -40px 0 -20px #184C40,
         rgba(0, 0, 0, 0.24) 0px 3px 8px;
         height: auto;
-        width: 280px;
+        width: 17.5rem;
+    }
+
+    .horizontalLine {
+        margin-top: 1rem;
+        margin-bottom: 0;
     }
 }

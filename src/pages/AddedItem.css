@@ -1,102 +1,121 @@
-.addedItem{
-   width: 900px;
+.addedItem {
+    width: 56rem;
     background: #fff;
-    margin: 20px;
-    padding: 20px;
+    padding: 1rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-family: 'Mukta Vaani', sans-serif;
 }
-.addedItem img{
-    width: 300px;
-    height: 300px;
-    margin: 5px;
+
+.addedItem img {
+    width: 9rem;
+    height: 9rem;
+    margin: .25rem;
 }
-.addedItemInfoAndPhoto{
+
+.addedItemInfoAndPhoto {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 22px;
+    font-size: 1.5rem;
     justify-content: space-around;
 }
-.addedItemInfo{
+
+.addedItemInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #242222;
 }
-.addedItemInfo p{
-    margin: 2px;
-    font-size: 22px;
+
+.addedItemInfo p {
+    margin: .25rem;
+    font-size: 1.5rem;
 }
-.addedItemQuantity{
+
+.addedItemQuantity {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.addedItemQuantity p{
-margin: 0 15px;
-}
-.addedItem h5{
-    font-size: 24px;
-margin: 5px;
 
-text-transform: capitalize;
+.addedItemQuantity p {
+    margin: 0 1rem;
 }
-.quantityBtn{
+
+.addedItem h5 {
+    font-size: 1.5rem;
+    margin: .25rem;
+    text-transform: capitalize;
+}
+
+.quantityBtn {
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 1.25rem;
     color: #fff;
-   background: #184C40;
-border-radius: 2px;
-transition:  1s ease-out;
-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 2.95px 2.5px;
-cursor: pointer;
-font-family: 'Libre Franklin', sans-serif;
-padding: .1rem .5rem;
+    background: #184C40;
+    border-radius: 2px;
+    transition:  1s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 2.95px 2.5px;
+    cursor: pointer;
+    font-family: 'Libre Franklin', sans-serif;
+    padding: .1rem .5rem;
 }
-.collect-step1{
+
+.collect-step1 {
     text-decoration: none;
     color: #fff;
 }
+
 .quantityBtn:active,
-.trash:active{
+.trash:active {
     box-shadow: none;
     background: #fff;
 }
-.quantityBtn:hover{
-    background:  #102C2B;
+
+.quantityBtn:hover {
+    background: #102C2B;
 }
-.trash{
+
+.trash {
     color: #184C40;
     background-color: transparent;
-border: none;
-outline: none;
-font-size: 24px;
-margin-left: 80px;
-cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    cursor: pointer;
 }
+
 @media screen and (max-width: 960px){
-    .addedItem{
-        width: 280px;
-    }
-    .addedItem img{
-        width: 150px;
-        height: 150px;
-    }
-    .addedItemInfo h5{
-        font-size: 18px;
-    }
-    .addedItemInfo p{
-        font-size: 14px;
-    }
-    .trash{
-        margin-left: 0;
-        font-size: 16px;
-    }
-    .quantityBtn{
-        font-size: 16px;
-        padding: 0rem .4rem;
+    .addedItem {
+        width: 17.5rem;
     }
 
+    .addedItemInfo {
+        max-width: 50%;
+    }
+
+    .addedItem img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .addedItemInfo h5 {
+        font-size: 1rem;
+    }
+
+    .addedItemInfo p {
+        font-size: .875rem;
+    }
+
+    .trash {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .quantityBtn {
+        font-size: 1rem;
+        padding: 0rem .5rem;
+    }
 }
